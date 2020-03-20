@@ -13,5 +13,5 @@ mirroring = 1
 	.byte $4e, $45, $53, $1a
 	.byte prg_npage
 	.byte chr_npage
-	.byte ((mapper & $0f) << 4) | (mirroring $1)
+	.byte ((mapper & $0f) << 4) | (mirroring & 1)
 	.byte mapper & $f0

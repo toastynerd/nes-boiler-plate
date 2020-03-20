@@ -2,13 +2,13 @@ MEMORY {
 	ZP:	start = $0000, size = $0100, type = rw;
 	RAM:	start = $3000, size = $0400, type = rw;
 	HEADER:	start = $0000, size = $0010, type = rw,
-		file = %0, fill = yes;
+		file = %O, fill = yes;
 	PRG0:	start = $8000, size = $4000, type = ro,
-		file = %0, fill = yes;
+		file = %O, fill = yes;
 	CHR0a:	start = $0000, size = $1000, type = ro,
-		file = %0, fill = yes;
+		file = %O, fill = yes;
 	CHR0b:	start = $1000, size = $0000, type = ro,
-		file = %0, fill = yes;
+		file = %O, fill = yes;
 }
 
 SEGMENTS {
