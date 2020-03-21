@@ -7,7 +7,7 @@ MEMORY {
 		file = %O, fill = yes;
 	CHR0a:	start = $0000, size = $1000, type = ro,
 		file = %O, fill = yes;
-	CHR0b:	start = $1000, size = $0000, type = ro,
+	CHR0b:	start = $1000, size = $1000, type = ro,
 		file = %O, fill = yes;
 }
 
